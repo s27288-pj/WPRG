@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2</title>
+</head>
+<body>
+    <h1>Formularz rezerwacji</h1>
+    <form action="reservation_handler.php" method="post">
+        <label for="quantity">Ilość osób: </label>
+        <select name="quantity" id="quantity">
+            <option value="1">1 osoba</option>
+            <option value="2">2 osoby</option>
+            <option value="3">3 osoby</option>
+            <option value="4">4 osoby</option>
+        </select>
+        <br>
+        <label for="Imie">Imię: </label>
+        <input type="text" name="first_name" id="first_name" required>
+        <br>
+        <label for="Nazwisko">Nazwisko: </label>
+        <input type="text" name="last_name" id="last_name" required>
+        <br>
+        <label for="text">Adres: </label>
+        <input type="text" name="address" id="address" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="phone">Telefon: </label>
+        <input type="tel" name="phone" id="phone" required>
+        <br>
+        <label for="credit_card">Numer karty kredytowej:</label>
+        <input type="text" name="credit_card" id="credit_card" required>
+        <br>
+        <label for="date">Data przyjazdu: </label>
+        <input type="date" name="arrival_date" id="arrival_date" required>
+        <br>
+        <label for="date">Data wyjazdu: </label>
+        <input type="date" name="departure_date" id="departure_date" required>
+        <br>
+        <label for="arrival_time">Godzina przyjazdu: </label>
+        <input type="time" name="arrival_time" id="arrival_time">
+        <br>
+        <label for="child_bed">Dostawienie łóżka dla dziecka:</label>
+        <input type="checkbox" name="child_bed" id="child_bed">
+        <br>
+        <label for="amenities">Udogodnienia:</label><br>
+        <input type="checkbox" name="amenities[]" value="Klimatyzacja"> Klimatyzacja<br>
+        <input type="checkbox" name="amenities[]" value="Popielniczka"> Popielniczka dla palacza<br>
+        <input type="checkbox" name="amenities[]" value="Parking"> Parking<br>
+        <input type="checkbox" name="amenities[]" value="Śniadanie w cenie"> Śniadanie w cenie<br>
+        <br>
+        <input type="submit" value="Zarezerwuj">
+    </form>
+</body>
+</html>
